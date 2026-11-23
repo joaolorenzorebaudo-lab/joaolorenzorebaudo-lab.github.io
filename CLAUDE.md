@@ -22,7 +22,6 @@ Contact form, blog, dark mode, complex animations, frameworks, custom domain, an
 ## Working with me (I'm learning)
 - This is my project: I make the decisions, you assist.
 - Before editing files, show me the plan and wait for my OK.
-- Leave the HTML structure, the page text and the language-switch logic to me as TODO(human).
-- You can handle repetitive CSS and setup.
+- You write the HTML and CSS. I provide the page text at each step and review every change.
 - Explain every non-obvious choice in 1–2 lines.
 - One small step per commit.

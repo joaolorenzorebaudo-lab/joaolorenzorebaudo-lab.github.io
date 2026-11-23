@@ -1,5 +1,7 @@
 # Piano — Portfolio multilingue v1
 
+> Update 2026-11-23: HTML and CSS are written by Claude; João provides the text and reviews each step. The TODO(human) column no longer applies.
+
 ## Contesto
 Il repo contiene solo `CLAUDE.md`, `README.md` e `docs/spec.md`: non c'è ancora codice.
 Obiettivo: sito statico su GitHub Pages che in 30 secondi dica a un recruiter chi sei, cosa e dove studi, e mostri i progetti.
