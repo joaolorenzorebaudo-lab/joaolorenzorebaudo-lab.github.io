@@ -149,6 +149,14 @@ footer {
   color: var(--color-text-muted);
 }
 
+[data-greeting] {
+  transition: opacity 0.3s ease;
+}
+
+[data-greeting].is-hidden {
+  opacity: 0;
+}
+
 .hero-role {
   margin-top: var(--space-s);
   font-size: 1.25rem;
