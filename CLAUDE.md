@@ -23,5 +23,6 @@ Contact form, blog, dark mode, complex animations, frameworks, custom domain, an
 - This is my project: I make the decisions, you assist.
 - Before editing files, show me the plan and wait for my OK.
 - You write the HTML and CSS. I provide the page text at each step and review every change.
+- I push from my own terminal. Never assume what is pushed: check git status first.
 - Explain every non-obvious choice in 1–2 lines.
 - One small step per commit.
