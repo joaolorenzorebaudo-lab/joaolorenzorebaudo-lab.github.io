@@ -26,6 +26,7 @@ body,
 h1,
 h2,
 h3,
+h4,
 p,
 ul,
 ol,
@@ -54,7 +55,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   line-height: 1.2;
 }
 
@@ -180,7 +182,8 @@ footer {
 }
 
 .hero-tags li + li::before,
-.project-tags li + li::before {
+.project-tags li + li::before,
+.background-tags li + li::before {
   content: "·";
   content: "·" / "";
   margin-inline: var(--space-s);
@@ -245,7 +248,8 @@ footer {
   color: var(--color-text-muted);
 }
 
-.project-tags {
+.project-tags,
+.background-tags {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -257,4 +261,37 @@ footer {
 .project-card a {
   margin-top: auto;
   font-weight: 600;
+}
+
+/* Background */
+.background > h3 {
+  margin-top: var(--space-l);
+  margin-bottom: var(--space-m);
+  font-size: 1.25rem;
+}
+
+.background > h2 + h3 {
+  margin-top: 0;
+}
+
+.timeline {
+  padding-left: var(--space-m);
+  border-left: 2px solid var(--color-border);
+  list-style: none;
+}
+
+.timeline li + li {
+  margin-top: var(--space-l);
+}
+
+.timeline h4 {
+  font-size: 1rem;
+}
+
+.timeline p {
+  color: var(--color-text-muted);
+}
+
+.timeline-date {
+  font-size: 0.875rem;
 }
