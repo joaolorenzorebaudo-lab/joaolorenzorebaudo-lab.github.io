@@ -249,7 +249,7 @@ footer {
   font-size: 0.875rem;
 }
 
-.tag-list li + li::before {
+.tag-list li:not(:last-child)::after {
   content: "·";
   content: "·" / "";
   margin-inline: var(--space-s);
