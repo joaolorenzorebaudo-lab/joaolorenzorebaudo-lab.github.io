@@ -10,6 +10,8 @@
   --color-success-bg: #F0FDF4;
   --color-success-dot: #16A34A;
 
+  --shadow-card: 0 4px 12px rgb(31 41 55 / 0.08);
+
   --font-base: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
@@ -82,6 +84,8 @@ h2 {
 
 a {
   color: var(--color-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 a:focus-visible {
@@ -330,6 +334,13 @@ footer {
 .project-card a {
   margin-top: auto;
   font-weight: 600;
+}
+
+@media (hover: hover) {
+  .project-card:hover {
+    border-color: var(--color-border-strong);
+    box-shadow: var(--shadow-card);
+  }
 }
 
 /* Background */
