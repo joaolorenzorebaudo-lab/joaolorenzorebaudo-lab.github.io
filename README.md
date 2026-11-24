@@ -58,9 +58,9 @@ Target: under 10 minutes. No CSS changes needed, because the grid adapts to the 
 
 ## How I built it
 
-I wrote the spec, decided the content and chose the design direction. The code was written by Claude Code as an AI pair programmer, following the rules in `CLAUDE.md`. I reviewed and approved every change before it was committed, in small, separate commits. I also used Claude in chat as a coach while writing the spec and the plan, and during review.
+I defined the spec, decided the content and chose the design direction. The code was written by Claude Code as an AI pair programmer, following the rules I set in `CLAUDE.md`. Before each commit I reviewed the change and checked it in the browser, to make sure it worked the way I wanted. Commits are small, one change at a time.
 
-Some problems caught in review:
+Some problems found during the build:
 
 - A CSS rule targeted the class `.hero`, but the hero section only had `id="hero"`, so the styles were silently not applied.
 - The language list showed "IT" with no label, which could read as Information Technology. It now has a "Languages:" label, and each code is an abbreviation with its full name.
