@@ -30,6 +30,8 @@ h4,
 p,
 ul,
 ol,
+dl,
+dd,
 figure {
   margin: 0;
 }
@@ -294,4 +296,24 @@ footer {
 
 .timeline-date {
   font-size: 0.875rem;
+}
+
+/* Contact */
+.contact address {
+  margin-top: var(--space-m);
+  font-style: normal;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-s) var(--space-m);
+}
+
+.contact-list dt {
+  color: var(--color-text-muted);
+}
+
+.contact-list dd {
+  overflow-wrap: anywhere;
 }
