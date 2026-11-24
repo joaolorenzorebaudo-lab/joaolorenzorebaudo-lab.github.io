@@ -55,9 +55,9 @@ Decisioni prese: una pagina HTML per lingua (EN, IT, FR), cambio lingua solo con
 - **Foto:** il file resta rettangolare; il ritaglio lo fa il CSS con dimensioni fisse e `object-fit: cover`.
 - **Saluto:**
   - Lo script si carica con `defer`: parte quando l'HTML è pronto, senza bloccare la pagina.
-  - La lista delle 5 parole sta solo nello script, nell'ordine della spec: Ciao → Olá → Bonjour → Hello → Hola, poi ricomincia.
+  - La lista delle 5 parole sta solo nello script, nell'ordine della spec: Ciao → Olá → Bonjour → Hello → Hola.
   - La parola statica nell'HTML è quella della lingua della pagina (EN "Hello", IT "Ciao", FR "Bonjour"). Lo script la legge, ne trova la posizione nella lista e parte da lì. Non serve nessuna configurazione per pagina.
-  - Cambia ogni 2,5 secondi.
+  - Cambia ogni 2,5 secondi e si ferma dopo un giro (circa 12 s), di nuovo sulla parola della pagina, per limitare la distrazione.
   - Senza JS resta la parola statica. Con `prefers-reduced-motion` il saluto resta fermo. La parola che cambia non viene annunciata ogni volta dagli screen reader.
 
 ---
@@ -133,7 +133,7 @@ Ogni passo: ti mostro cosa faccio, aspetto il tuo OK, modifico, ti chiedo l'appr
   - la foto non ha metadati EXIF, in particolare GPS: `mdls assets/img/photo.jpg | grep -i -E "latitude|longitude"` non restituisce nulla, e in Anteprima → Strumenti → Mostra impostazioni non c'è la scheda GPS;
   - la foto è ritagliata bene a 375 px e su desktop.
 - **Passo 4:** l'icona compare nella scheda del browser.
-- **Passo 5:** online, `/js/greeting.js` risponde 200; parte da "Hello" e segue Hola → Ciao → Olá → Bonjour → Hello ogni 2,5 s; con DevTools → Rendering → "prefers-reduced-motion: reduce" resta fermo; con JS disattivato si vede "Hello".
+- **Passo 5:** online, `/js/greeting.js` risponde 200; parte da "Hello" e segue Hola → Ciao → Olá → Bonjour → Hello ogni 2,5 s e si ferma su "Hello"; con DevTools → Rendering → "prefers-reduced-motion: reduce" resta fermo; con JS disattivato si vede "Hello".
 - **Passi 11–12:** da ogni pagina ogni link di lingua porta alla pagina giusta, nessun 404; `lang` corretto; il saluto parte dalla parola della pagina; CSS e JS caricati anche da `/it/` e `/fr/`.
 - **Finale:** Lighthouse in Chrome (Accessibilità e SEO ≥ 90) + test dei 30 secondi.
 

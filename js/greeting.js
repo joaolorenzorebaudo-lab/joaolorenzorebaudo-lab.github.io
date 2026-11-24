@@ -24,7 +24,7 @@
     if (reducedMotion.matches) return;
 
     index = (index + 1) % WORDS.length;
-    // Stop after one full cycle, back on the page's own word (WCAG 2.2.2).
+    // Stop after one full cycle, back on the page's own word, so the greeting does not keep distracting the reader.
     if (index === startIndex) clearInterval(timer);
 
     element.classList.add("is-hidden");
