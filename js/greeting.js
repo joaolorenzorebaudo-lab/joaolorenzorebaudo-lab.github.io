@@ -18,6 +18,7 @@
   const startIndex = index;
 
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let timer;
 
   function showNextWord() {
     if (reducedMotion.matches) return;
@@ -35,5 +36,5 @@
     }, FADE_MS);
   }
 
-  const timer = setInterval(showNextWord, INTERVAL_MS);
+  timer = setInterval(showNextWord, INTERVAL_MS);
 })();
