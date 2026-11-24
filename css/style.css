@@ -106,11 +106,13 @@ header {
   border-bottom: 1px solid var(--color-border-subtle);
 }
 
+/* flex-end + auto margin on the monogram: when the language switcher wraps, it sits on the right */
 .header-inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--space-m);
+  justify-content: flex-end;
+  gap: var(--space-s) var(--space-l);
   padding-block: var(--space-m);
 }
 
@@ -133,10 +135,31 @@ header nav a:focus-visible {
 }
 
 .monogram {
+  margin-right: auto;
   color: var(--color-accent);
   font-size: 1.125rem;
   font-weight: 700;
   text-decoration: none;
+}
+
+.lang-switcher {
+  font-size: 0.875rem;
+}
+
+.lang-switcher ul {
+  gap: 0;
+}
+
+.lang-switcher li:not(:last-child)::after {
+  content: "·";
+  content: "·" / "";
+  margin-inline: var(--space-s);
+  color: var(--color-text-muted);
+}
+
+.lang-switcher [aria-current] {
+  color: var(--color-text);
+  font-weight: 600;
 }
 
 main > section {
