@@ -6,7 +6,7 @@ Live site: https://joaolorenzorebaudo-lab.github.io
 
 ## Features
 
-- One static page per language. English is live; Italian and French are coming next.
+- One static page per language, with a language switcher in the header. English and Italian are live; French is coming next.
 - Sections: hero, projects, background (education, experience, skills, languages), contact.
 - Rotating greeting in the hero (Ciao → Olá → Bonjour → Hello → Hola). It starts from the page's own language, stops after one cycle, and stays still when the system asks for reduced motion.
 - Mobile-first, responsive layout.
@@ -38,23 +38,19 @@ Paths are absolute from the site root (`/css/style.css`), so opening `index.html
 ```
 /
 ├── index.html          English page
+├── it/index.html       Italian page
 ├── css/style.css       Single stylesheet shared by every language
 ├── js/greeting.js      Rotating greeting
 ├── assets/img/         Photo, favicon, Apple touch icon
 ├── docs/spec.md        Project spec (v1.0)
 ├── docs/plan.md        Implementation plan and decisions
+├── docs/maintaining.md Checklists for adding a project or a language
 └── CLAUDE.md           Instructions for the AI pair programmer
 ```
 
-## Adding a project
+## Maintaining
 
-Target: under 10 minutes. No CSS changes needed, because the grid adapts to the number of cards.
-
-1. In `index.html`, copy an existing `<article class="project-card">` block and paste it below.
-2. Change the title, the description, the tags and the link URL.
-3. Change the project name in **two** places: the `<h3>` and the link's `aria-label` (`View code of <project name>`). If you forget the `aria-label`, the link still looks correct but screen readers announce the wrong project.
-4. Repeat in every language page. Translate the description and the link text plus its `aria-label`. The title, tags and URL stay the same.
-5. Check at 375 px and on desktop, then commit: `feat: add project <name>`.
+Checklists for adding a project or a language: [docs/maintaining.md](docs/maintaining.md)
 
 ## How I built it
 
