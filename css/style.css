@@ -173,22 +173,23 @@ footer {
   color: var(--color-text-muted);
 }
 
-.hero-tags {
+.tag-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: var(--space-m);
   padding: 0;
   list-style: none;
   color: var(--color-text-muted);
   font-size: 0.875rem;
 }
 
-.hero-tags li + li::before,
-.project-tags li + li::before,
-.background-tags li + li::before {
+.tag-list li + li::before {
   content: "·";
   content: "·" / "";
   margin-inline: var(--space-s);
+}
+
+.hero .tag-list {
+  margin-top: var(--space-m);
 }
 
 .hero-languages {
@@ -248,16 +249,6 @@ footer {
 
 .project-card p {
   color: var(--color-text-muted);
-}
-
-.project-tags,
-.background-tags {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  list-style: none;
-  color: var(--color-text-muted);
-  font-size: 0.875rem;
 }
 
 .project-card a {
