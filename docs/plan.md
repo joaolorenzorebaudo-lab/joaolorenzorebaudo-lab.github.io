@@ -1,5 +1,7 @@
 # Piano — Portfolio multilingue v1
 
+> Historical document: the implementation plan drafted with Claude Code in plan mode and approved by me on 2026-11-23. Some details changed during the build (for example, the CV download is postponed). The current state is in the README and in docs/maintaining.md.
+
 > Update 2026-11-23: HTML, CSS and JavaScript are written by Claude; João provides the text and reviews each step. The TODO(human) column no longer applies.
 
 ## Contesto

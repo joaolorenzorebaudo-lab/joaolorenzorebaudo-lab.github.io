@@ -15,8 +15,8 @@ Tipo: sito statico (solo front end), ospitato su GitHub Pages.
 - v1.1: PT, ES
 
 ## Requisiti
-- CV in PDF (inglese) scaricabile dalla Hero
-- Dati personali online: solo email, foto, città
+- CV in PDF (inglese) scaricabile dalla Hero (rimandato: non è nella v1)
+- Dati di contatto online: solo l'email (niente telefono né indirizzo)
 - Aggiungere un progetto: < 10 minuti
 - Aggiungere una lingua: < 30 minuti
 - Elemento distintivo: nella Hero un saluto che cambia lingua (Ciao → Olá → Bonjour → Hello → Hola). Unica animazione ammessa.

@@ -55,7 +55,7 @@ Checklists for adding a project or a language: [docs/maintaining.md](docs/mainta
 
 ## How I built it
 
-I defined the spec, decided the content and chose the design direction. The code was written by Claude Code as an AI pair programmer, following the rules I set in `CLAUDE.md`. Before each commit I reviewed the change and checked it in the browser, to make sure it worked the way I wanted. Commits are small, one change at a time.
+I defined the spec, decided the content and chose the design direction. The code was written by Claude Code as an AI pair programmer, following the rules I set in `CLAUDE.md`. I reviewed every change and checked the result in the browser, to make sure it worked the way I wanted. Commits are small, one change at a time.
 
 Some problems found during the build:
 
