@@ -6,7 +6,7 @@ Live site: https://joaolorenzorebaudo-lab.github.io
 
 ## Features
 
-- One static page per language, with a language switcher in the header. English and Italian are live; French is coming next.
+- One static page per language, with a language switcher in the header. English, Italian and French are live.
 - Sections: hero, projects, background (education, experience, skills, languages), contact.
 - Rotating greeting in the hero (Ciao → Olá → Bonjour → Hello → Hola). It starts from the page's own language, stops after one cycle, and stays still when the system asks for reduced motion.
 - Mobile-first, responsive layout.
@@ -39,6 +39,7 @@ Paths are absolute from the site root (`/css/style.css`), so opening `index.html
 /
 ├── index.html          English page
 ├── it/index.html       Italian page
+├── fr/index.html       French page
 ├── css/style.css       Single stylesheet shared by every language
 ├── js/greeting.js      Rotating greeting
 ├── assets/img/         Photo, favicon, Apple touch icon
